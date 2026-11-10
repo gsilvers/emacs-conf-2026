@@ -51,11 +51,17 @@ The [[https://infrequently.org/2025/11/performance-inequality-gap-2026/#mobile][
 
 ** Prices of computer in the west
 
+What is the average computer in Europe, in the USA?
+
 Its not a [[https://www.apple.com/mac-studio/specs/][Mac studio]] running a local agent.
 
 That Mac Studio starts at $2500 in the US.
 
 With the pressure of AI prices to compute are going up.
+
+Most users here are using cheap laptops and tables to supplement their phones.
+
+Phones, Phones, Phones.
 
 * Free as in free beer
 
@@ -179,7 +185,7 @@ Mattias Engdegård
 [[https://www.reddit.com/r/emacs/comments/1iy50up/emacs_packagestips_for_mobile_os_use_touch/][chabalatabala on reddit]] - Finding someone else looking encouraged me to continue.
 [[https://www.reddit.com/r/emacs/comments/1un91s6/memorize_vocabulary_on_the_go_on_emacs_android/][bohonghuang on reddit]] - I use your tool bar as a basis for a lot of my daily use.
 [[https://github.com/matheusmoreira][Matheus Moreira]] - Your lone lisp project and emails really drove this home for me.
-[[https://protesilaos.com/][Protesilaos]] - While I have not yet convinced you to install emacs on a phone. Perhaps one day. Thank you for your engagement on this.
+[[https://protesilaos.com/][Protesilaos]] - While I have not yet convinced you to install Emacs on a phone. Perhaps one day. Thank you for your engagement on this.
 
 ** Me
 
