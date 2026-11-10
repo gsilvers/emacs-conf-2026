@@ -1,0 +1,8 @@
+* Emacs Conference Tasks
+** TODO Record Conference at the park
+- [X] Create Slides
+- [X] Be Nervous
+- [ ] Give Presentation
+- [ ] Give Credit Where Due
+- [ ] Entire world uses emacs now!
+

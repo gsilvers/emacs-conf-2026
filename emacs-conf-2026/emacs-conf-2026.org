@@ -1,0 +1,189 @@
+* Hello
+
+- Greg Silverstein
+- Pennsylvania, USA
+- Software Engineer
+- [[https://gsilvers.github.io/me/][Me on the web]]
+- Excited to be here
+- A little nervous
+  
+* This seems a little weird... Where am I?
+
+You're not on a tiny monitor you are on an android phone. Specifically you are on one of these.
+
+[[./pixel.jpg]]
+
+A pixel 9a a few years old running [[https://grapheneos.org/][GrapheneOS]].
+
+* That's not a very big computer, this is not about LLMs eh?
+
+No,
+
+This talk is almost about the opposite of the high spec, high bandwidth and big ram of LLMs.
+
+Full disclosure I did use an LLM exploring some of this domain. But in many ways this talk is a side effect of LLMs.
+
+And maybe my obsessive compulsions.
+
+* Huh?
+
+This talk is not going to be a flashy technical demo. I am going to show you some interesting quirks and features of Emacs on Android. But mostly this is a talk about one of the freedoms of free software.
+
+* Huh?
+
+Yea I created this whole thing in Emacs on a phone. Buckle Up!
+
+* Free as in Free Beer
+
+Many of us in software focus mostly and free as in freedom to run and inspect. We don't focus on free as in beer because we are mostly well enough off. 
+
+* Free as in Free Beer
+
+** What might a new user be watching this from?
+
+What is the average computer a human being has access to in 2026?
+
+The most common [[https://www.statista.com/statistics/1559435/connected-devices-worldwide/?srsltid=AYCX9vJZ2_MtlJkHHLY6tWVIfZWBKAeU_p-rVLpVxRRWeRhc1Shsbpaq][internet connected device]] is an iot node followed by mobile phones.
+
+The [[https://infrequently.org/2025/11/performance-inequality-gap-2026/#mobile][average smartphone]] is something with a low end arm chip and 4-8GB of ram. Basically a Raspberry Pi 5.
+
+* Free as in free beer 
+
+** Prices of computer in the west
+
+Its not a [[https://www.apple.com/mac-studio/specs/][Mac studio]] running a local agent.
+
+That Mac Studio starts at $2500 in the US.
+
+With the pressure of AI prices to compute are going up.
+
+* Free as in free beer
+
+My pitch is that the majority of new future Emacs users. They are on an android phone somewhere in the world unaware Emacs is there for them. 
+
+* Emacs on Android
+
+** Android "distributions"
+
+Most phones come with a very corporate spyware laden version of android. No android is completely FOSS but there are some OK distributions.
+
+[[https://wiki.lineageos.org/][Lineage OS]]
+
+[[https://grapheneos.org/][Grapheneos]]
+
+* Emacs on Android
+
+** Emacs Install
+
+The first barrier people face is that Emacs is not on the play store or any commercial app store. 
+
+*** fdroid
+
+*** Forge Builds
+
+Android has an app [[https://github.com/ImranR98/Obtainium][Obtainium]] that treats git as an app store for updates. 
+
+[[https://sourceforge.net/projects/android-ports-for-gnu-emacs/files/termux][Wei]]
+
+[[https://github.com/gsilvers/emacs-termux-builder][Me]]
+
+*** Build it yourself
+
+* Emacs on Android
+
+** Being At Home
+
+*** Some Config Ideas
+
+Make your config OS reactive
+
+#+BEGIN_SRC emacs-lisp
+  ((eq system-type 'android)
+  (message (format "Loading Android Config: %s" system-type))
+  (greg/android-setup-items))
+#+END_SRC
+
+Put your toolbar at the bottom.
+
+#+BEGIN_SRC emacs-lisp
+(menu-bar-set-tool-bar-position `bottom)
+#+END_SRC
+
+Bind your volume buttons
+
+#+BEGIN_SRC emacs-lisp
+(menu-bar-set-tool-bar-position `bottom)
+#+END_SRC
+
+Configure your menu
+
+#+BEGIN_SRC emacs-lisp
+(tool-bar-add-item item)
+#+END_SRC
+
+* Emacs on Android
+
+** Being at home
+
+*** Fonts
+
+- TTF Only
+- Some Android distributions restrict installing fonts.
+- But you can just store them with your Emacs files.
+
+* Emacs on Android
+
+** Uses
+
+- Edit text of course
+- Org
+  - Todos
+  - Bookmark Manager
+  - Blogging
+  - Write up an Emacs Conf talk from the park!
+  - Do an Emacs Conf talk from a park!
+- ELisp
+- Calculator
+- Write your own [[https://github.com/lone-lang/lone][lisp]] mostly in [[https://alexalejandre.com/interviews/interview-with-matheus-moreira/][termux on Android]].
+
+* Emacs on Android
+
+** Issues
+
+- External binaries git etc 
+- External executables slow
+- File system is sand boxed
+
+* Call To Action
+
+- Use Emacs on Android
+- Tell the devs they are fucking awesome 
+- Talk About It
+- Write tools for people
+
+* Credit and Links
+
+** Core Emacs Devs (that I could find from git)
+
+Po Lu
+Michael Albinus	
+Peter Oliver	
+Stefan Kangas	
+Eli Zaretskii	
+Paul Eggert	
+Mattias Engdegård
+
+** Community Posts that Motivated Me
+
+[[https://kristofferbalintona.me/articles/surprisingly-emacs-on-android-is-pretty-good/][Kristoffer]] - Your work really enabled me to get started here.
+[[https://www.reddit.com/r/emacs/comments/1iy50up/emacs_packagestips_for_mobile_os_use_touch/][chabalatabala on reddit]] - Finding someone else looking encouraged me to continue.
+[[https://www.reddit.com/r/emacs/comments/1un91s6/memorize_vocabulary_on_the_go_on_emacs_android/][bohonghuang on reddit]] - I use your tool bar as a basis for a lot of my daily use.
+[[https://github.com/matheusmoreira][Matheus Moreira]] - Your lone lisp project and emails really drove this home for me.
+[[https://protesilaos.com/][Protesilaos]] - While I have not yet convinced you to install emacs on a phone. Perhaps one day. Thank you for your engagement on this.
+
+** Me
+
+[[https://gsilvers.github.io/me/][My Blog]]
+[[https://github.com/gsilvers/emacs-termux-builder][My Emacs APK Builder / Signer]] - Currently just builds and signs Termux and Emacs together. I may add pre-canned fonts and other binaries.
+[[https://github.com/gsilvers/.emacs.d][My Emacs Config]]
+[[https://github.com/gsilvers/emacs-conf-2026][Materials from This Talk]]
