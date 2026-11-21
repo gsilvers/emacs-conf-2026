@@ -29,9 +29,13 @@ And maybe my obsessive compulsions.
 
 This talk is not going to be a flashy technical demo. I am going to show you some interesting quirks and features of Emacs on Android. But mostly this is a talk about one of the freedoms of free software.
 
+
+
 * Huh?
 
 Yea I created this whole thing in Emacs on a phone. Buckle Up!
+
+My hope for this talk is that you start using Emacs on the go and share publically what you do. Unlike emacs on computers the internet is quiet about Android Emacs.
 
 * Free as in Free Beer
 
@@ -65,7 +69,7 @@ Phones, Phones, Phones.
 
 * Free as in free beer
 
-My pitch is that the majority of new future Emacs users. They are on an android phone somewhere in the world unaware Emacs is there for them. 
+My premise here is that the majority of new future Emacs users. They are on an android phone somewhere in the world unaware Emacs is there for them. 
 
 * Emacs on Android
 
