@@ -29,13 +29,11 @@ And maybe my obsessive compulsions.
 
 This talk is not going to be a flashy technical demo. I am going to show you some interesting quirks and features of Emacs on Android. But mostly this is a talk about one of the freedoms of free software.
 
-
-
 * Huh?
 
 Yea I created this whole thing in Emacs on a phone. Buckle Up!
 
-My hope for this talk is that you start using Emacs on the go and share publically what you do. Unlike emacs on computers the internet is quiet about Android Emacs.
+My hope for this talk is that you start using Emacs on the go and share publicly what you do. Unlike Emacs on computers the internet is quiet about Android Emacs.
 
 * Free as in Free Beer
 
@@ -63,7 +61,7 @@ That Mac Studio starts at $2500 in the US.
 
 With the pressure of AI prices to compute are going up.
 
-Most users here are using cheap laptops and tables to supplement their phones.
+Most users here are using cheap laptops and tablets to supplement their phones.
 
 Phones, Phones, Phones.
 
@@ -79,7 +77,7 @@ Most phones come with a very corporate spyware laden version of android. No andr
 
 [[https://wiki.lineageos.org/][Lineage OS]]
 
-[[https://grapheneos.org/][Grapheneos]]
+[[https://grapheneos.org/][GrapheneOS]]
 
 * Emacs on Android
 
@@ -104,6 +102,8 @@ Android has an app [[https://github.com/ImranR98/Obtainium][Obtainium]] that tre
 ** Being At Home
 
 *** Some Config Ideas
+
+Emacs as a software keyboard.
 
 Make your config OS reactive
 
@@ -146,6 +146,7 @@ Configure your menu
 ** Uses
 
 - Edit text of course
+- Use eww and browse the small web
 - Org
   - Todos
   - Bookmark Manager
